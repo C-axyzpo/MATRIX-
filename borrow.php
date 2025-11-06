@@ -1,6 +1,5 @@
 <?php
-$conn = new mysqli("localhost","root","","attendance");
-if ($conn->connect_error) die("DB connection failed: " . $conn->connect_error);
+require_once 'config.php';
 
 // Fetch all laptops
 $laptops = $conn->query("SELECT * FROM laptops ORDER BY laptop_no ASC");
