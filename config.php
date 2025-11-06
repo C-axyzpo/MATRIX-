@@ -6,7 +6,7 @@ $DB_USER = 'freedb_thematrix';
 $DB_PASS = '*MVy9zvP6BxX2MW';  // remove the * at start
 $DB_NAME = 'freedb_matrixproject';
 
-$conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+$conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME, 3306);
 
 if ($conn->connect_error) {
     die("DB Connection failed: " . $conn->connect_error);
